@@ -69,17 +69,17 @@ const About = () => {
   
     const images = [
         { 
-          src: "/images/alexander_portrait.jpg", 
+          src: `${process.env.PUBLIC_URL}/images/alexander_portrait.jpg`, 
           name: "alexander_portrait.jpg",
           description: "This is me at HackMIT 2023!"
         },
         { 
-          src: "/images/alexander_coding.jpg", 
+          src: `${process.env.PUBLIC_URL}/images/alexander_coding.jpg`, 
           name: "alexander_coding.jpg",
           description: "Here I am deep in concentration, probably working on tree leetcode problems :)"
         },
         { 
-          src: "/images/alexander_hobby.jpg", 
+          src: `${process.env.PUBLIC_URL}/images/alexander_hobby.jpg`, 
           name: "alexander_hobby.jpg",
           description: "Here I am at one of my many competitive programming events (my team won)"
         },
