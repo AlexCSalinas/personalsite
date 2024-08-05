@@ -7,8 +7,21 @@ const TerminalWrapper = styled.div`
   color: #00FFCC;
   font-family: 'Courier New', Courier, monospace;
   padding: 20px;
-  height: 100vh;
+  min-height: 100vh;
   overflow-y: auto;
+  box-sizing: border-box;
+  margin: 0;
+`;
+const ToggleButton = styled.button`
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #00FFCC;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  z-index: 1000;
 `;
 
 const AsciiArt = styled.pre`
@@ -25,7 +38,7 @@ const Cursor = styled.span`
   }
 `;
 
-const Terminal = () => {
+const Terminal = ({ toggleMode }) => {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState([]);
   const navigate = useNavigate();
@@ -70,6 +83,7 @@ const Terminal = () => {
 
   return (
     <TerminalWrapper>
+      <ToggleButton onClick={toggleMode}>Switch to Simple Mode</ToggleButton>
       <AsciiArt>
         {`
  $$$$$$\\  $$\\       $$$$$$$$\\ $$\\   $$\\  $$$$$$\\  $$\\   $$\\ $$$$$$$\\  $$$$$$$$\\ $$$$$$$\\  
