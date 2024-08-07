@@ -52,8 +52,10 @@ const SimpleMode = ({ toggleMode }) => {
         
         <main>
           <section className="intro">
-            <h2>creative<br/>ENGINEER &<br/>DEVELOPER</h2>
-            <p>I AM AN ASPIRING SOFTWARE ENGINEER AND STUDENT AT THE UNIVERSITY OF MICHIGAN. I LOVE ATTENDING HACKATHONS, LEARNING NEW TECHNOLOGIES, AND MEETING NEW PEOPLE. I'M PASSIONATE ABOUT CREATING INNOVATIVE SOLUTIONS FOR REAL WORLD PROBLEMS. I GENUINLEY LOVE THE CREATIVE PROCESS OF BUILDING THAT COMES WITH PROGRAMMING. IN MY FREE TIME I ENJOY MAKING EDUCATIONAL TIKTOKS TO MY SMALL BUT LOYAL COMMUNITY OF 1100+ FOLLOWERS. FEEL FREE TO CHECK OUT MY PROJECTS OR CONNECT WITH ME ON SOCIAL MEDIA!</p>
+            <h2>Creative<br/>Engineer & Developer</h2>
+            <p>As an aspiring software engineer and current student at the University of Michigan, I am passionate about leveraging technology to create innovative solutions for real-world challenges. My enthusiasm for programming extends beyond the classroom, as I regularly participate in hackathons to expand my skillset and network with like-minded individuals.
+I thrive on the creative process inherent in software development and continuously seek opportunities to learn new technologies. In addition to my academic pursuits, I maintain an educational TikTok channel, where I share insights with a growing community of over 1,100 followers.
+I invite you to explore my projects and connect with me on professional social media platforms to learn more about my work and experiences in the field of software engineering.</p>
           </section>
           
           <section className="interests">
