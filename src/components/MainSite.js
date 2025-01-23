@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const MainWrapper = styled.div`
   font-family: Arial, sans-serif;
-  max-width: 800px;
+  max-width: 100px;
   margin: 0 auto;
   padding: 20px;
 `;

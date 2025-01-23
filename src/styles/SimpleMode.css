@@ -20,7 +20,7 @@
 .content {
   position: relative;
   padding: 2rem;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -30,7 +30,7 @@ header {
 
 h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 8rem;
+  font-size: 4rem;
   margin-bottom: 0.5rem;
 }
 
@@ -42,7 +42,7 @@ h2 {
 
 .intro h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 2rem;
 }
@@ -68,7 +68,7 @@ h2 {
 /* ... (keep all styles before .timeline unchanged) ... */
 
 .timeline, .projects {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .timeline-container {
@@ -297,4 +297,48 @@ footer {
     flex: 0 0 100%;
     max-width: 100%;
   }
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.timeline-content {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.description-container {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.description-container.expanded {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+.timeline-content h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.timeline-content p {
+  margin-bottom: 0.25rem;
+}
+
+.timeline h2 {
+  margin-bottom: 2rem;
 }
