@@ -5,6 +5,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Donut from './components/Donut';
 import SimpleMode from './components/SimpleMode';
+import CustomPage from './components/CustomPage'; // Add this import
 
 function App() {
   const [isTerminalMode, setIsTerminalMode] = useState(false);
@@ -22,10 +23,12 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/donut" element={<Donut />} />
+            <Route path="/custom-page" element={<CustomPage />} />
           </Routes>
         ) : (
           <Routes>
             <Route path="/" element={<SimpleMode toggleMode={toggleMode} />} />
+            <Route path="/custom-page" element={<CustomPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         )}

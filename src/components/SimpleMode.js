@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import React from 'react';
 import '../styles/SimpleMode.css';
 import ToggleButton from './ToggleButton';
@@ -14,6 +15,8 @@ import FeaturedArtist from './FeaturedArtist';
 import PlaylistTracks from './PlaylistTracks';
 import SpotifyProfile from './SpotifyProfile';
 //import TikTokProfile from './TikTokProfile';
+
+
 
 const projects = [
   {
@@ -88,6 +91,7 @@ const projects = [
 ];
 
 const SimpleMode = ({ toggleMode }) => {
+  const navigate = useNavigate();  
   return (
     <div className="simple-mode">
       <div className="background" style={{ backgroundImage: `url(${backgroundImage})` }}></div>
@@ -95,10 +99,40 @@ const SimpleMode = ({ toggleMode }) => {
       <PlaylistTracks />
       <FeaturedArtist /> 
       <ArtCredit />
-      {
       <div className="content">
-        <ToggleButton isTerminalMode={false} toggleMode={toggleMode} />
-        
+      <ToggleButton isTerminalMode={false} toggleMode={toggleMode} />
+        {/* Add the HTML mode button with fixed positioning */}
+        <button 
+          onClick={() => navigate('/custom-page')} 
+          style={{
+            position: 'fixed',
+            top: '70px',  // Position it below the terminal mode button
+            right: '20px',
+            background: 'rgba(255, 255, 255, 0.1)',
+            color: 'white',
+            border: '1px solid rgba(255, 255, 255, 0.3)',
+            padding: '10px 20px',
+            fontSize: '0.9rem',
+            letterSpacing: '0.1em',
+            textTransform: 'uppercase',
+            cursor: 'pointer',
+            fontFamily: 'Roboto, sans-serif',
+            transition: 'all 0.3s ease',
+            backdropFilter: 'blur(5px)',
+            WebkitBackdropFilter: 'blur(5px)',
+            zIndex: 1000
+          }}
+          onMouseOver={(e) => {
+            e.target.style.background = 'rgba(255, 255, 255, 0.2)';
+            e.target.style.borderColor = 'rgba(255, 255, 255, 0.5)';
+          }}
+          onMouseOut={(e) => {
+            e.target.style.background = 'rgba(255, 255, 255, 0.1)';
+            e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)';
+          }}
+        >
+          Switch to EECS Mode
+        </button>
         <header>
           <h1>Alexander Salinas</h1>
           <h2>SOFTWARE ENGINEER, DEVELOPER</h2>
@@ -165,7 +199,7 @@ I thrive on the creative process inherent in software development and continuous
             <a href="https://www.linkedin.com/in/alexandercsalinas">LINKEDIN</a>
           </div>
         </footer>
-      </div>}
+      </div>
     </div>
   );
 };
