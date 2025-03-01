@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Your Name</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Fomantic UI CSS library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
+</head>
+<body>
+  <!-- Main page container -->
+  <div class="ui text container">
+    <!-- Social links -->
+    <a class="ui right floated icon button" href="https://github.com/yourusername/" target="_blank">
+      <i class="github icon"></i>
+    </a>
+    <a class="ui right floated icon button" href="https://linkedin.com/in/yourusername/" target="_blank">
+      <i class="linkedin icon"></i>
+    </a>
+    <a class="ui right floated icon button" href="mailto:your.email@example.com">
+      <i class="envelope icon"></i>
+    </a>
+
+    <!-- Header section -->
+    <header>
+      <h1>Your Name</h1>
+      <p>
+        <img class="ui left floated rounded small image" alt="Your Name" src="path/to/your/photo.jpg">
+        Brief introduction about yourself. Keep it to 2-3 sentences about your role, interests, and current focus.
+      </p>
+    </header>
+
+    <!-- Navigation menu -->
+    <nav class="ui stackable menu">
+      <a href="#projects" class="item">Projects</a>
+      <a href="#experience" class="item">Experience</a>
+      <a href="#contact" class="right item">Contact</a>
+    </nav>
+
+    <div class="ui hidden section divider"></div>
+
+    <!-- Projects section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="ui three stackable cards">
+        <a class="ui fluid card" href="project-link" target="_blank">
+          <div class="content">
+            <div class="header">Project Name</div>
+            <div class="description">
+              Brief project description
+            </div>
+            <div class="floating ui icon label">
+              <i class="icon github"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <div class="ui section divider"></div>
+
+    <!-- Experience section -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="ui list">
+        <div class="item">
+          <div class="header">Position Title</div>
+          <div class="description">
+            Company Name, Dates
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="ui inverted vertical footer segment">
+    <section class="ui center aligned container" id="contact">
+      <div class="ui stackable inverted divided grid">
+        <div class="four wide column">
+          <div class="ui inverted link list">
+            <div class="item">
+              <i class="mail icon"></i>
+              your.email@example.com
+            </div>
+            <a class="item" href="https://github.com/yourusername/" target="_blank">
+              <i class="github icon"></i>
+              GitHub
+            </a>
+            <a class="item" href="https://linkedin.com/in/yourusername/" target="_blank">
+              <i class="linkedin icon"></i>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="ui inverted section divider"></div>
+      <div class="ui horizontal inverted small divided link list">
+        <div class="item">&copy; 2024 Your Name</div>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>
