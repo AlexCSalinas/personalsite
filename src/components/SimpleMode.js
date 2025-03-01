@@ -8,6 +8,9 @@ import project2Image from '../assets/images/project2.jpg';
 import project3Image from '../assets/images/project3.jpg';
 import project4Image from '../assets/images/project4.jpg';
 import project5Image from '../assets/images/project5.jpg';
+import loveNotesImage from '../assets/images/lovenotes.jpg';
+import rosesImage from '../assets/images/roses.jpg';
+import redditImage from '../assets/images/reddit.jpg';
 import Timeline from './Timeline'; // Add this import at the top
 import ArtCredit from './ArtCredit';
 import HackathonStory from './HackathonStory';
@@ -86,6 +89,27 @@ const projects = [
         ]
       }
     }
+  },
+  {
+    title: "Love Notes 2025",
+    description: "Love Notes for the Michigan Daily! I worked on some scripts for the site that sent emails to people who got love notes.",
+    image: loveNotesImage,
+    demoLink: "https://specials.michigandaily.com/2025/love-notes/",
+    tags: ["CSS", "HTML", "Python", "TypeScript", "JavaScript"]
+  },
+  {
+    title: "Valentine Roses",
+    description: "Simple website that showcases a 3d bouquet of roses (after being prompted to be my valentine) and the math behind the modeling.",
+    image: rosesImage,
+    demoLink: "https://alexcsalinas.github.io/ValentineRoses/",
+    tags: ["HTML", "CSS", "Three.js"]
+  },
+  {
+    title: "r/uofm analyzer",
+    description: "Page that ranks users from the umich subreddit based on their activity as well as displaying a graph of the monthly activity times in the subreddit.",
+    image: redditImage,
+    demoLink: "https://reddit-analyzer.vercel.app/",
+    tags: ["HTML", "CSS", "Python", "Flask", "Praw Api"]
   },
   // Add two more projects here
 ];
